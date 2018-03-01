@@ -1,0 +1,331 @@
+{
+	"id": "46fc8132-8d47-49b5-bf61-7e7269d42e57",
+	"name": "marvel",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"f856a644-947e-4404-bb56-da62d2d16332",
+		"aa61fe9d-8ec1-45b2-a89b-023ce0fc9792"
+	],
+	"folders_order": [
+		"d5623300-c667-43c5-8fa3-c50324302920",
+		"b8ef7037-4f67-41b0-a2cd-5cb8e34681fb",
+		"5d13e813-59bb-4536-976b-245e73cd27e0"
+	],
+	"folders": [
+		{
+			"id": "d5623300-c667-43c5-8fa3-c50324302920",
+			"name": "COMICS",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "46fc8132-8d47-49b5-bf61-7e7269d42e57",
+			"folder": null,
+			"order": [
+				"ee8ec825-a481-4377-8018-88cfa879781f",
+				"a9376db2-3a07-4f50-af83-70137684b03e",
+				"a4ea55a2-f0be-4351-85aa-3dcd791ef75a"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "b8ef7037-4f67-41b0-a2cd-5cb8e34681fb",
+			"name": "HEROES",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "46fc8132-8d47-49b5-bf61-7e7269d42e57",
+			"folder": null,
+			"order": [
+				"21b926b4-2217-473b-ae57-29dc5d224c7a",
+				"1aab64c7-1f99-4e06-9a58-6b6153de0244",
+				"47e4111a-374f-4c29-aeb5-7a39b9ac97cb"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "5d13e813-59bb-4536-976b-245e73cd27e0",
+			"name": "USER",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "46fc8132-8d47-49b5-bf61-7e7269d42e57",
+			"folder": null,
+			"order": [
+				"aea453c9-34bc-4109-9d00-742bfb17de8a",
+				"5f7e63b4-9628-442d-a175-c399a7b0f6ee"
+			],
+			"folders_order": []
+		}
+	],
+	"requests": [
+		{
+			"id": "1aab64c7-1f99-4e06-9a58-6b6153de0244",
+			"name": "GET heroes",
+			"url": "{{server}}{{api}}/heroes",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "b8ef7037-4f67-41b0-a2cd-5cb8e34681fb",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "21b926b4-2217-473b-ae57-29dc5d224c7a",
+			"name": "GET heroes - fail",
+			"url": "{{server}}{{api}}/heroes/1",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "b8ef7037-4f67-41b0-a2cd-5cb8e34681fb",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "47e4111a-374f-4c29-aeb5-7a39b9ac97cb",
+			"name": "GET heroes detail",
+			"url": "{{server}}{{api}}/heroes/1011334",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "b8ef7037-4f67-41b0-a2cd-5cb8e34681fb",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5f7e63b4-9628-442d-a175-c399a7b0f6ee",
+			"name": "favourite hero",
+			"url": "{{server}}{{api}}/user/hero",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "5d13e813-59bb-4536-976b-245e73cd27e0",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a4ea55a2-f0be-4351-85aa-3dcd791ef75a",
+			"name": "GET comics detail",
+			"url": "{{server}}{{api}}/comics/1003",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "d5623300-c667-43c5-8fa3-c50324302920",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a9376db2-3a07-4f50-af83-70137684b03e",
+			"name": "GET comics",
+			"url": "{{server}}{{api}}/comics",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "d5623300-c667-43c5-8fa3-c50324302920",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "aa61fe9d-8ec1-45b2-a89b-023ce0fc9792",
+			"name": "peti api marvel",
+			"url": "http://gateway.marvel.com/v1/public/comics?ts=1&apikey=5eed928284d373505ca7246e02c66a9b&hash=59d7a21508584a478ebf7603adf0a936",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "ts",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "apikey",
+					"value": "5eed928284d373505ca7246e02c66a9b",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "hash",
+					"value": "59d7a21508584a478ebf7603adf0a936",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "aea453c9-34bc-4109-9d00-742bfb17de8a",
+			"name": "favourite hero",
+			"url": "{{server}}{{api}}/user/hero",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "5d13e813-59bb-4536-976b-245e73cd27e0",
+			"rawModeData": "{\n\t\"idHero\": 1011334\n}",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ee8ec825-a481-4377-8018-88cfa879781f",
+			"name": "GET comics - fail",
+			"url": "{{server}}{{api}}/comics/1",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "d5623300-c667-43c5-8fa3-c50324302920",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f856a644-947e-4404-bb56-da62d2d16332",
+			"name": "Login",
+			"url": "{{server}}/login",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"user\": \"alvaro111\",\n\t\"password\": \"d0e46158db756016f8c42700c6bb1a89\"\n}",
+			"headers": "//Authorization: \nContent-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}

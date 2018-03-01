@@ -1,0 +1,31 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.5.1",
+    "chai": "^4.1.2",
+    "express": "^4.7.1",
+    "jsonfile": "^4.0.0",
+    "jwt-simple": "^0.5.1",
+    "log4js": "^2.5.3",
+    "md5": "^2.2.1",
+    "method-override": "^2.1.2",
+    "mocha": "^5.0.1",
+    "moment": "^2.20.1",
+    "morgan": "^1.9.0",
+    "promise": "^8.0.1",
+    "request": "*",
+    "request-promise": "^4.2.2",
+    "store": "^2.0.12",
+    "supertest": "^3.0.0",
+    "underscore": "*"
+  }
+}
